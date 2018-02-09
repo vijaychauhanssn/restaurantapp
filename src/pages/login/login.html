@@ -1,0 +1,61 @@
+<ion-header >
+  <ion-navbar color="primary" >
+  	 <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="login">
+	<img class="logo" src="assets/imgs/logo-icon.png">
+	<form (ngSubmit)="logForm()">
+	<ion-row>
+		<ion-col col-12>
+	  <ion-item class="item" inset>
+        <ion-label >Email</ion-label>
+        <ion-input type="email" [(ngModel)]="todo.title" name="email"></ion-input>
+      </ion-item>			
+		</ion-col>
+	</ion-row>
+	<ion-row>
+		<ion-col col-12>
+	  <ion-item class="item">
+        <ion-label>Password</ion-label>
+        <ion-input  type="password" [(ngModel)]="todo.description" name="Password"></ion-input>
+      </ion-item>			
+		</ion-col>
+	</ion-row>	
+	<ion-row>
+		<ion-col col-12>
+				<p text-center>FORGOT PASSWORD ?</p>		
+		</ion-col>
+	</ion-row>
+	<ion-row>
+		<ion-col col-12>
+			  <button ion-button type="submit" block class="login-btn">LogIn</button>			
+		</ion-col>
+	</ion-row>	
+	<ion-row>
+		<ion-col col-12>
+			<p text-center>LOGIN WITH</p>			
+		</ion-col>
+	</ion-row>	
+	<ion-row>
+		<ion-col col-12 text-center>
+			 <span>
+       <img class="social-icon" src="assets/imgs/fb.png">
+     </span>
+            <span>
+       <img class="social-icon" src="assets/imgs/g+.png">
+     </span>
+            <span>
+       <img class="social-icon" src="assets/imgs/twitter.png">
+     </span>			
+		</ion-col>
+	</ion-row>
+	<ion-row>
+		<ion-col col-12>
+			<p text-center  (click)="Go('RegistrationPage')">REGISTER NOW !</p>	
+		</ion-col>
+	</ion-row>		
+    </form>
+</ion-content>

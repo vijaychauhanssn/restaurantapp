@@ -23,8 +23,6 @@ $app-direction: ltr;
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
 
 
-
-
 // Named Color Variables
 // --------------------------------------------------
 // Named colors makes it easy to reuse colors on various components.
@@ -38,7 +36,8 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  white:#fff
 );
 
 
@@ -86,3 +85,7 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+
+/// @prop - Box shadow of the outline button
+$button-md-outline-box-shadow:none ;
