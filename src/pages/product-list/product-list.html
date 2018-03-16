@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title text-center>Restaurant App</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+	<ion-searchbar placeholder="Type  Item Name" showCancelButton color="danger" (ionInput)="filterItems($event)"></ion-searchbar>
+	 <ion-list >
+    <ion-item *ngFor="let item of items">
+      {{ item }}
+    </ion-item>
+    <ion-card no-padding (click)="Go('ProductDetailsPage')">
+   <ion-item no-padding>
+   	<ion-label>
+	 <ion-row class="catagory" no-padding >
+		<ion-col col-6 no-padding>
+			<img src="assets/imgs/products_list_1.jpg">
+		</ion-col>
+		<ion-col col-6>
+		<p class="item-name">
+			Cheesy Rosemary Rolls
+		</p>
+		<p class="item-detail" text-wrap>
+			<span>
+				Maecenas magna lacus, scelerisque vitae interdum n...
+			</span>
+		</p>
+		<p class="item-detail">
+		Price : <span class="item-price">$ 6
+         </span>
+				</p>
+			</ion-col>
+			</ion-row>
+  		</ion-label>	
+    </ion-item>
+  <ion-card-content>
+  </ion-card-content>
+</ion-card>
+  </ion-list>
+</ion-content>

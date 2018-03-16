@@ -1,18 +1,21 @@
-<!--
-  Generated template for the CartPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>cart</ion-title>
+    <ion-buttons class="bar-buttons bar-buttons-md" end>
+    	<button class="header-btn bar-button bar-button-md bar-button-default bar-button-default-md bar-button-md-royal" end>
+    	<span class="button-inner">
+    		<ion-icon  name="cart"></ion-icon>
+    	</span>
+    	</button>	
+    </ion-buttons>	
   </ion-navbar>
-
 </ion-header>
-
-
-<ion-content padding>
-
+<ion-content class="bg">
+	<div>
+		<ion-row>
+		<ion-icon class="empty-cart icon icon-md ion-md-cart" name="cart"></ion-icon>
+		</ion-row>
+		<h4>Your Cart is empty!</h4>
+		<button class="empty-btn button button-md button-default " (click)="Go('HomePage')">Add Items</button>	
+	</div>
 </ion-content>

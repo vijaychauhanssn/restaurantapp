@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>product-details</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+	<ion-row class="productImage">
+		<img src="assets/imgs/products_details_1.jpg">
+	</ion-row>
+	<ion-row>
+		<ion-col col-6>
+			<div class="count">
+            <span class="item-count" (click)="decrement()">
+              -
+            </span>
+                <span class="item-count show-count">
+              {{counter}} 
+            </span>
+                <span class="item-count" (click)="increment()">
+              +
+            </span>
+            </div>
+		</ion-col>
+		<ion-col col-6>
+				<a class="btn-add-to-cart button button-md button-default button-default-md button-full button-full-md" full="" icon-left="" ion-button=""><span class="button-inner">
+                <ion-icon name="cart" role="img" class="icon icon-md ion-md-cart" aria-label="cart"></ion-icon>
+                &nbsp;
+                ADD TO CART
+            </span><div class="button-effect"></div></a>
+		</ion-col>	
+	</ion-row>
+	<ion-list class="size-list">
+		<ion-list-header>
+ 	   Action
+ 	 </ion-list-header>
+ 	<ion-item>
+    <ion-label>Cord</ion-label>
+    <ion-radio value="cord"></ion-radio>
+  </ion-item>
+  <ion-item>
+    <ion-label>Cord</ion-label>
+    <ion-radio value="cord"></ion-radio>
+  </ion-item>
+
+	</ion-list>	
+	<ion-row>
+		<ion-col col-6>
+			<a class="btn-add-to-cart button button-md button-default button-default-md button-full button-full-md" full="" icon-left="" ion-button=""><span class="button-inner">
+                <ion-icon name="cart" role="img" class="icon icon-md ion-md-cart" aria-label="cart"></ion-icon>
+                &nbsp;
+                CHECKOUT
+            </span><div class="button-effect"></div></a>
+		</ion-col>
+		<ion-col col-6>
+			<a class="btn-add-to-cart button button-md button-default button-default-md button-full button-full-md" full="" icon-left="" ion-button=""><span class="button-inner">
+                <ion-icon name="basket" role="img" class="icon icon-md ion-md-basket" aria-label="basket"></ion-icon>
+                &nbsp;
+                KEEP SHOPPING
+            </span><div class="button-effect"></div></a>
+		</ion-col>	
+	</ion-row>	
+
+    
+</ion-content>

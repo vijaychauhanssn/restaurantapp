@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the OfferPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
 
 @IonicPage()
 @Component({
@@ -14,10 +9,27 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'offer.html',
 })
 export class OfferPage {
-
+  offers:[{
+    image:string,
+    title:string
+  }];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  this.offers = [
+  {
+  	image:'offers_1.jpg',
+    title:'Mutton Slice'
 
+  },
+  {
+  	image:'offers_1.jpg',
+  	title:'Mutton Slice'
+  },
+  {
+  	image:'offers_1.jpg',
+  	title:'Mutton Slice'
+  }
+  ];
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad OfferPage');
   }

@@ -1,3 +1,44 @@
 page-offer {
-
+	.overlay {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.4)),to(rgba(0,0,0,.4)));
+    background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4));
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: relative;
+	}
+	.slider-img {
+    height: 330px;
+	}
+	.card-title {
+    position: absolute;
+    font-size: 2.6rem;
+    width: 100%;
+    color: #fff;
+    bottom: 0;
+    background-color: rgba(0,0,0,.2);
+    padding: 8px 0;
+	}
+	.full-slide {
+    height: 100%;
+	}
+	.slide-zoom {
+    height: 100%;
+	}
+	.price {
+    text-align: left;
+    padding: 0 0 0 1em;
+    margin: 5px 0;
+    font-size: 15px;
+	}
+	.total {
+    font-size: 20px;
+    font-weight: 700;
+    color: #32cd32;
+	}
+	.line {
+    text-decoration: line-through;
+    color: #777;
+	}
 }

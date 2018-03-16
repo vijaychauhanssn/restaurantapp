@@ -14,12 +14,11 @@
 
 <ion-content padding>
 
-<ion-card>
-  <img src="assets/imgs/1.jpg">
-
+<ion-card *ngFor="let category of categoryies">
+  <img src="assets/imgs/{{category.image}}">
   <ion-card-content>
-  	<h2>Marty McFly</h2>	
-    <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+  	<h2>{{category.heading}}</h2>	
+    <p>{{category.title}}</p>
   </ion-card-content>
 </ion-card>
 </ion-content>

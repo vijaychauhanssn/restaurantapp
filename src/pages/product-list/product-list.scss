@@ -1,0 +1,24 @@
+page-product-list {
+	.catagory .item-detail {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px;
+    max-height: 62px;
+	}
+	.catagory .item-name {
+    font-weight: 700;
+    font-size: 15px;
+	}
+	.item {
+    padding-left: 0px;
+    border-bottom: 0px solid #d5d5d5;
+	}
+	.catagory .item-price {
+    font-weight: 700;
+    color: #32cd32;
+	}
+	.item .label {
+    margin: 9px 0 0 0;
+	}
+}
